@@ -1,15 +1,15 @@
-
-#The function will assert if two arguments are equal and return an error message if they are not.
-def assertEqual(a, b, error = "Error, assertion failed!"):
+import sys
+#The function will assert if two arguments are equal and exits with an error message if they are not.
+def assertEqual(a, b, error = "Error!"):
     if(type(a) != type(b)): 
         print(error)
-        return 0
+        sys.exit()
     if(a==b):
-        #print("Assertion is succesful!")
+        print("Assertion is succesful!")
         return 1
     else:
         print(error)
-        return 0
+        sys.exit()
 
 dic1 = {'foo': 1, 'bar': 2}
 dic2 = {'foo': 1, 'bar': 2}
