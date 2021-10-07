@@ -31,3 +31,14 @@ for i in range(len(arr1)):
     if(assertEqual(arr1[i], arr2[i], "Element at " + str(i) + " position is not the same!")):
         newList.append(arr1[i])
 print(newList)
+
+#Verifying the function for a custom object
+class ComplexNumber:
+    def __init__(self, r=0, i=0):
+        self.real = r
+        self.imag = i
+
+ob1 = ComplexNumber(3,4)
+ob2 = ComplexNumber(3,3)
+
+assertEqual(ob1, ob2, "Object instances have different values")
