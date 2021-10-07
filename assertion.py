@@ -22,3 +22,12 @@ print(assertEqual(list1, list2))
 set1 = {"apple", "banana", "cherry"}
 set2 = {"cherry", "apple", "banana"}
 print(assertEqual(set1, set2))
+
+#Using the function in a loop
+arr1 = [1,2,3,4,6]
+arr2 = [1,2,3,5,6]
+newList = []
+for i in range(len(arr1)):
+    if(assertEqual(arr1[i], arr2[i], "Element at " + str(i) + " position is not the same!")):
+        newList.append(arr1[i])
+print(newList)
