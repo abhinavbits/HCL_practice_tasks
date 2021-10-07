@@ -1,4 +1,6 @@
-def assertEqual(a, b, error):
+
+#The function will assert if two arguments are equal and return an error message if they are not.
+def assertEqual(a, b, error = "Error, assertion failed!"):
     if(type(a) != type(b)): 
         print(error)
         return 0
@@ -15,8 +17,8 @@ print(assertEqual(dic1, dic2, "Failure!"))
 
 list1 = [1, 2, 3, 4, 5, 6]
 list2 = [2, 4, 5, 6, 7, 8]
-print(assertEqual(list1, list2, "Failure!"))
+print(assertEqual(list1, list2))
 
 set1 = {"apple", "banana", "cherry"}
 set2 = {"cherry", "apple", "banana"}
-print(assertEqual(set1, set2, "Failure!"))
+print(assertEqual(set1, set2))
