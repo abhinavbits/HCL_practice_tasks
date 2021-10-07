@@ -5,7 +5,7 @@ def assertEqual(a, b, error = "Error, assertion failed!"):
         print(error)
         return 0
     if(a==b):
-        print("Assertion is succesful!")
+        #print("Assertion is succesful!")
         return 1
     else:
         print(error)
