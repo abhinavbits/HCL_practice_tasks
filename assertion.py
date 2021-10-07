@@ -11,26 +11,26 @@ def assertEqual(a, b, error = "Error!"):
         print(error)
         sys.exit()
 
-dic1 = {'foo': 1, 'bar': 2}
-dic2 = {'foo': 1, 'bar': 2}
-print(assertEqual(dic1, dic2, "Failure!"))
+# dic1 = {'foo': 1, 'bar': 2}
+# dic2 = {'foo': 1, 'bar': 2}
+# print(assertEqual(dic1, dic2, "Failure!"))
 
-list1 = [1, 2, 3, 4, 5, 6]
-list2 = [2, 4, 5, 6, 7, 8]
-print(assertEqual(list1, list2))
+# list1 = [1, 2, 3, 4, 5, 6]
+# list2 = [2, 4, 5, 6, 7, 8]
+# print(assertEqual(list1, list2))
 
-set1 = {"apple", "banana", "cherry"}
-set2 = {"cherry", "apple", "banana"}
-print(assertEqual(set1, set2))
+# set1 = {"apple", "banana", "cherry"}
+# set2 = {"cherry", "apple", "banana"}
+# print(assertEqual(set1, set2, "Failure!"))
 
 #Using the function in a loop
-arr1 = [1,2,3,4,6]
-arr2 = [1,2,3,5,6]
-newList = []
-for i in range(len(arr1)):
-    if(assertEqual(arr1[i], arr2[i], "Element at " + str(i) + " position is not the same!")):
-        newList.append(arr1[i])
-print(newList)
+# arr1 = [1,2,3,4,6]
+# arr2 = [1,2,3,5,6]
+# newList = []
+# for i in range(len(arr1)):
+#     if(assertEqual(arr1[i], arr2[i], "Element at " + str(i) + " position is not the same!")):
+#         newList.append(arr1[i])
+# print(newList)
 
 #Verifying the function for a custom object
 class ComplexNumber:
