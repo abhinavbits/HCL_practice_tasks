@@ -1,1 +1,1 @@
-reading.py file will take the input from user and check if the values match for a columns in testing.xlsx file and then will return the testing.txt file.
+reading.py file will take the input from user and check if the values match for a columns in telecom.xlsx file and then will return the testing.txt file.
