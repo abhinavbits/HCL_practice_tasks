@@ -5,6 +5,7 @@ def inn(var1,var2):
     cond2 = df.loc[:, "Parameter ID"] == var2
     a = df.loc[cond1 & cond2]
     x = a.loc[:,"MML Command"].values[0]
+    x = x.replace("\n", " ")
     out(x)
 
 def out(x):
